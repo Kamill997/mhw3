@@ -1,2 +1,2 @@
 # mhw3
-API
+1 API senza autenticazione e 1 API con key
