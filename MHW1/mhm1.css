@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Nav ul {
+  list-style: none;   /*Uso list-style in modo da eliminare i puntini.Inoltre utilizzo una lista perchè altrimenti va tutto ad unirsi al logo*/
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2{
+  font-weight: 0;
+}
+
+img {
+  width: 100%;
+}
+
+p{
+  font-size: 20px;
+}
+
+#logo,.Benvenuto h2,.Benvenuto .Bottone,address{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#Intestazione {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  background-image: url(img/Delivery.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+#Intestazione .Benvenuto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 100%;
+}
+
+#Intestazione .Benvenuto div{
+  padding:0 60px;
+  background-color: white;
+  border:5px solid black;
+  border-radius: 10px;
+}
+
+#Intestazione .Benvenuto h2,#Intestazione .Benvenuto h3{
+font-size: 20px;
+}
+
+#Intestazione::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+.Nav {
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  height: 80px;
+  width: 100%;    /*Metto 100% perchè altrimenti la barra laterale va a collassarmi sul titolo*/
+  font-size: 15px;
+  padding: 10px 0;
+  position: absolute;
+}
+  
+#logo{
+  padding-left: 20px;
+}
+
+.Nav .Info{
+  display: flex;
+  padding: 20px;
+}
+  
+.Nav .Info li a {
+  padding: 10px;
+}
+
+.Bottone{
+  cursor: pointer;
+}
+
+.Info .Bottone:hover{
+  color: black;
+  background: white;
+  border-radius: 10px;
+}
+
+.Benvenuto .Bottone{
+  background: #262626;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.Nav .Menu {
+  display: none;
+}
+
+.Nav .Menu div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+#Centro {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin:50px 100px;
+}
+
+.Marchi,.Marchi-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Marchi div img,
+.Marchi-2 div img{
+  width: 40%;
+  margin-top: 150px;
+}
+
+.Marchi .Starbucks img{
+  margin-top: 100px;
+}
+
+.Marchi .Mc img{
+  width: 60%;
+  margin-top: 150px;
+}
+
+.Marchi .Kfc img{
+  margin-top: 90px;
+}
+
+.Marchi-2 .HUT img{
+  width:80%;
+  margin-top: 130px;
+}
+
+
+.Marchi h1,.Marchi-2 h1  
+{
+  font-size: 20px;
+}
+
+#Fine h1{
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#Contenitore-flex{
+  margin-top: 100px;
+}
+
+#Contenitore-flex .Box {
+  display: flex;
+}
+
+#Contenitore-flex .Box .Sinistra,
+#Contenitore-flex .Box .Destra {
+  width: 50%;
+}
+
+#Contenitore-flex .Box .Destra p{
+  font-size: 16px;
+}
+
+#Contenitore-flex .Box .Sinistra,
+#Contenitore-flex .Box .Destra,
+#Fine #Galleria .Foto div,
+#Chiusura .Info #Crediti div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#Contenitore-flex .Box .Destra{
+  font-family: 'Lora', serif;
+  background-color: black;
+  color: white;
+  line-height: 1;
+}
+
+#Fine #Galleria .Foto{
+  display: flex;
+  margin-bottom: 150px;
+}
+
+#Chiusura .Info #Crediti{
+  display: flex;
+}
+
+#Fine #Galleria .Foto div,
+#Chiusura .Info #Crediti div{
+  width: 100%;
+}
+
+
+#Chiusura {
+  font-family: 'Merriweather', serif;
+  background-image:url(img/Footer.jpg);
+  background-size: cover;
+  background-position: center;
+  color:white;
+  text-align: center;
+  padding: 50px;
+}
+
+#Chiusura address{
+
+  padding-top: 10px;
+}
+
+#Chiusura p a{
+  margin-top: 10px;
+  color:gray;
+}
+
+#Chiusura h3{
+  font-size: 1.7em;
+  padding-bottom:10px;
+  margin:0;
+}
+
+#Chiusura ul{
+  margin-top: 0;
+  padding:0 20px;
+}
+
+#Chiusura ul li{
+  padding-bottom: 20px;
+}
+
+#Chiusura a{
+  color:white
+}
+
+@media(max-width: 800px) {
+
+  #Contenitore-flex .Box{
+    flex-direction: column;
+  }
+  #Contenitore-flex .Box .Sinistra,
+  #Contenitore-flex .Box .Destra{
+    width: 100%;
+  }
+  
+  #Contenuto
+  {
+    height: 550px;
+  }
+
+  #Contenuto .Benvenuto h2 {
+    font-size: 21px;
+  }
+
+  #Contenuto .Benvenuto p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px 0 40px;
+  }
+
+  #Centro {
+    margin: 40px 10px;
+  }
+
+  .Nav .Info{
+    display: none;
+  }
+
+  .Nav .Menu {
+    display: block;
+    padding-right: 10px;
+  }
+
+  .Marchi {
+    flex-direction: column;
+  }
+  
+  .Marchi-2{
+    flex-direction: column;
+  }
+    
+  .Marchi .Kfc img{
+    width: 60%;
+  }
+
+  .Marchi .Mc img{
+    width: 40%;
+  }
+
+  .Marchi-2 .Chipotle img{
+    width: 40%;
+  }
+
+  .Marchi .Starbucks img{
+    width: 50%;
+  }
+
+  .Marchi-2 .BK img{
+    width: 50%;
+  }
+    
+  #Fine #Galleria .Foto{
+    flex-direction: column;
+  }
+
+  #Fine #Galleria .Foto img{
+    width: 55%;
+  }
+
+  #Chiusura,#Chiusura p{
+    font-size: 14px;
+  }
+
+  #Chiusura .Menu{
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 400px) {
+
+  .Benvenuto .Bottone {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  #Chiusura,#Chiusura p{
+  font-size: 11px;
+  }
+}
+
+@media(max-width: 300px){
+  
+  .Benvenuto .Bottone {
+  font-size: 10px;
+  padding: 10px 10px;
+  }
+}
+

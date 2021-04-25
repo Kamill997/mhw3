@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>I Piatti</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Oswald&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mhw3.css"/>
+        <script src="script.js" defer></script>
+      </head>
+
+      <body>
+            <header id="Intestazione">
+              <nav class="Nav">
+                <h2 id="Logo">Food Delivery</h2>
+                    <ul class="Info">
+                        <li><a href="MHW1/mhm1.html">Home</a></li>
+                        <li><a href="#Contatta">Contattaci</a></li>
+                        <li><a href="#visita">Inizia Subito</a></li>
+                        <li><a href="form.html" class="Bottone">Accedi/Registrati</a></li>
+                    </ul>
+                    <div class="Menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+                <div class="Benvenuto">
+                  <div>
+                  <h2>I migliori ristoranti per ordinare il tuo cibo</h2>
+                  <h3>
+                    Scegli ciò che più preferisci
+                  </h3>
+                </div>
+              </div>
+            </header>
+        
+            
+            <article class="hidden" id="pref">
+
+              <h1 class="Cerca">Ricette Preferite</h1>
+
+              <section id="pref-elem">
+
+              </section>
+            </article>
+
+            <h1 class="Cerca">Ricerca i piatti che desideri:</h1>
+
+            <form name = "ricerca" id ="ricerca" class="Nav">
+                
+              <div>
+                <label class="Contenuto">Contenuto: <input type = "text" name = "dish" id = "dish">&nbsp;<input class="submit" type ="submit"></label>
+              </div>               
+              <div>
+                <input type="text" id="barra" onkeyup="CercaPiatti()" placeholder="Cerca piatto">
+              </div>
+
+            </form>
+
+            <article id="general"><a name=visita></a>
+              
+
+            <section class="dishes-grid general-elem" id="antipasto">
+
+                
+            </section>
+
+            
+
+            <section class="dishes-grid general-elem" id="primo-secondo">
+              
+                
+            </section>
+
+            
+
+            <section class="dishes-grid general-elem" id="dolce">
+              
+                
+            </section>
+
+          </article>
+
+          <footer id="Chiusura">
+            <div class="Info">
+              <div id="Crediti">
+                <div>
+                  <h3>FOOD DELIVERY</h3>
+                  <div>
+                    <address>Ingegneria Informatica-DIEEI</address>
+                    <p><a name="Contatta">Camiolo Luca O46002187</a></p>
+                  </div>
+                </div>
+                <div class="Menu">
+                  <h3>Menu</h3>
+                  <div>
+                  <ul>
+                    <li><a href="account.html">Il mio account</li></a>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </footer>
+      </body>
+</html>
